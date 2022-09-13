@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #222;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+fieldset {
+  border: 0 none;
+}
+
+button,
+input,
+textarea {
+  font-size: 100%;
+  vertical-align: baseline;
+  line-height: normal;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
