@@ -16,9 +16,15 @@ const RQSuperHeroesPage = () => {
       // (1) refetchOnMount: true
       // refetchOnMount: true, // refetch on mount 새로고침 할때마다 리페치
       // refetchOnMount: false, // query will not refetch on mount. check on network tap
-      refetchOnMount: "always",
+      refetchOnMount: true,
+      // (2) refetchOnWindowFocus: true
+      // refetchOnWindowFocus: true, // refetch on window focus
+      // refetchOnWindowFocus: false, // query will not refetch on window focus. check on network tap
+      refetchOnWindowFocus: "always",
     }
   );
+
+  console.log(isLoading, isFetching);
 
   if (isLoading) return "Loading...";
 
