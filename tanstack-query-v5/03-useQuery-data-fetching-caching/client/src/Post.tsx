@@ -44,9 +44,9 @@ export default function Post({ id }: { id: number }) {
   });
 
   const userQuery = useQuery({
-    queryKey: ["users", postsQuery?.data?.userId],
-    enabled: postsQuery?.data?.userId !== null,
-    queryFn: () => getUser(postsQuery?.data?.userId),
+    queryKey: ["users", postsQuery.data?.userId],
+    enabled: postsQuery.data?.userId !== null,
+    queryFn: () => getUser(postsQuery.data.userId),
   });
 
   if (postsQuery.status === "pending") return <div>Loading...</div>;
